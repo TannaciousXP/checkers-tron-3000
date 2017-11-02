@@ -1,11 +1,16 @@
 const express = require('express');
-const app = express();
+const server = express();
+const path = require('path');
 
-app.use(express.urlencoded({extended: true}));
+server.use(express.urlencoded({extended: true}));
+server.use(express.static(path.join(__dirname, '../public')));
 
 
+server.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
 
-app.listen(3000, () => {
+server.listen(3000, () => {
   console.log('Listening on checker-tron');
 });
