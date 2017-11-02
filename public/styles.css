@@ -28,11 +28,10 @@ body, html {
   border-bottom: 3px solid black;
   height: 94px;
   align-items: flex-start;
-  background-color: #cf000f;
 }
 
 .row:last-child {
-  border-bottom: 0px;
+  border: 0px;
 }
 
 .square {
@@ -41,14 +40,23 @@ body, html {
   justify-content: center;
   position: relative;
   height: 100%;
-  border: 0 3px solid black; 
+  border-right: 3px solid black; 
+  align-items: center;
 }
 
-.square .red {
+.row .square:last-child {
+  border: 0px;
+}
+
+.square.red {
   background-color: red;
 }
 
-.square .black {
+.square.black {
   background-color: black;
 }
 
+.checker {
+  height: 80%;
+  width: 80%;
+}
