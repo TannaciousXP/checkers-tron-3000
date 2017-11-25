@@ -4,7 +4,7 @@ Checker-Tron-3000
 
 ## Getting started
 
-Open index.html on a live-server extention or double click on index.html file within the directory folder
+Open index.html on a live-server extension or double click on index.html file within the directory folder
 
 ```
 Afterwards:
